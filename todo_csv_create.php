@@ -11,7 +11,7 @@ $email = $_POST["email"];
 
 
 // 書き込みデータの作成（スペース区切りで最後に改行コードを追加）
-$write_data = "{$todo} {$deadline} {$emai} {$information} {$contact}\n";
+$write_data = "{$todo} {$deadline} {$email} {$information} {$contact}\n";
 
 // ファイルを開く処理
 $file = fopen('data/todo.csv', 'a');
